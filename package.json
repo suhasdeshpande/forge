@@ -1,0 +1,36 @@
+{
+  "name": "forge",
+  "version": "0.0.1",
+  "description": "Forge SDK: reliability layer for typed, validated LLM pipelines",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "prepare": "bun run build",
+    "test": "bun test"
+  },
+  "keywords": [
+    "llm",
+    "sdk",
+    "zod",
+    "pipeline",
+    "streaming"
+  ],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "bun@1.2.14",
+  "engines": {
+    "bun": ">=1.2.0"
+  },
+  "dependencies": {
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "bun-types": "^1.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

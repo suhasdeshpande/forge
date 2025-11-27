@@ -1,0 +1,14 @@
+{
+  "name": "forge-hono-sse-example",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.2.14",
+  "scripts": {
+    "dev": "bun run src/server.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.1",
+    "forge": "file:../..",
+    "hono": "^4.6.10"
+  }
+}
