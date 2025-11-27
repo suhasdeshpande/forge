@@ -96,6 +96,19 @@ bun run lint
 bun test
 ```
 
+### Example: Hono SSE pipeline
+
+Try the example server that streams a pipeline for generating a Hello World
+React app:
+
+```bash
+cd examples/hono-sse
+bun install
+bun run dev
+```
+
+Then open `http://localhost:8787/generate` to watch pipeline events over SSE.
+
 ## Roadmap
 
 - HTTP helpers for Hono and Express
